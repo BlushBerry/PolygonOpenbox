@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="root-menu" label="Openbox 3">
+		<menu execute="/usr/bin/openbox-menu lxde-applications.menu" id="desktop-app-menu" label="Applications"/>
+		<separator/>
+		<menu id="root-menu-40306" label="My Applications">
+			<menu id="root-menu-40306-783033" label="Games">
+				<item label="Furcadia">
+					<action name="Execute">
+						<execute>/usr/share/playonlinux/playonlinux --run &quot;Furcadia&quot; %F</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="root-menu-504810" label="Openbox">
+			<item label="Edit Autostart">
+				<action name="Execute">
+					<execute>notepadqq /home/polygon/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<item label="Edit Keybinds">
+				<action name="Execute">
+					<execute>obkey</execute>
+				</action>
+			</item>
+			<item label="Edit Menu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Restart Openbox">
+				<action name="Restart"/>
+			</item>
+			<item label="Reconfigure Openbox">
+				<action name="Reconfigure">
+					<execute>openbox --reconfigure</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Logout">
+			<action name="Execute">
+				<execute>oblogout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

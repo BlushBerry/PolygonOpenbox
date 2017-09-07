@@ -1,0 +1,8 @@
+tint2 &
+pamac-tray-appindicator &
+nitrogen --restore
+compton -c -b
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceCompositionPipeline = On }"
+volti &
+plank &
+/usr/lib/lxpolkit/lxpolkit
